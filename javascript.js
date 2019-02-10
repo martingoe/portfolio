@@ -3,18 +3,22 @@ if ($(window).width() <= 500) {
   console.log("set container to 100%");
   $("#aboutcontainer").width($(window).width());
 }
-var x = false;
-console.log("Started script")
+
 $(document).scroll(function(e) {
-  if (!x) {
-    $("#aboutcontainer").removeClass("col-md-5");
-    $("#aboutcontainer").animate({
-      width: "100%"
-    }, 1000, function() {
-      $("#toolsSection").animate({
-        opacity: 1
-      }, "slow");
-    });
-    x = true;
+
+  if ($(window).scrollTop() == 0) {
+    console.log("close")
+
+    $("#toolsSection").css('opacity', "0")
+
+    $("#aboutcontainer").width("41.666667%")
+
+  } else {
+    console.log("open")
+
+    $("#aboutcontainer").width("100%")
+
+    $("#toolsSection").css('opacity', "1")
+
   }
-})
+});

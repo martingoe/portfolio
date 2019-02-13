@@ -27,12 +27,13 @@ img {
     margin-right: -50vw;
   }
 }
-.mdc-elevation--z3{
+
+.mdc-elevation--z3 {
   height: 40vh;
   max-width: 250px !important;
 }
 
-#githubLink{
+#githubLink {
   margin-top: 10px;
 }
 
@@ -47,10 +48,7 @@ img {
   opacity: 0;
   position: absolute;
   transition: opacity 1s;
-
-
 }
-
 
 #aboutcontainer {
   background-color: rgb(66, 66, 66);

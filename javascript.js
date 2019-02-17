@@ -1,24 +1,11 @@
-if ($(window).width() <= 500) {
-  $("#aboutcontainer").removeClass("col-md-5");
-  console.log("set container to 100%");
-  $("#aboutcontainer").width($(window).width());
-}
-
-$(document).scroll(function(e) {
-
-  if ($(window).scrollTop() == 0) {
-    console.log("close")
-
-    $("#toolsSection").css('opacity', "0")
-
-    $("#aboutcontainer").width("41.666667%")
-
-  } else {
-    console.log("open")
-
-    $("#aboutcontainer").width("100%")
-
-    $("#toolsSection").css('opacity', "1")
-
-  }
-});
+window.onscroll = function () {
+    const aboutcontainer = document.getElementById("aboutcontainer");
+    const toolsSection = document.getElementById("toolsSection");
+    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
+        aboutcontainer.style.width = "100%";
+        toolsSection.style.opacity = "1";
+    } else {
+        toolsSection.style.opacity = "0";
+        aboutcontainer.style.width = "41.666667%";
+    }
+};

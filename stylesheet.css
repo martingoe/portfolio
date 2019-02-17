@@ -6,11 +6,63 @@
 
 #section2 {
   background-color: rgb(66, 66, 66);
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding-top: 20vh;
 }
 
-.stop-scrolling {
-  height: 100%;
-  overflow-y: hidden;
+#classToCenterToolsIn{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.mdc-elevation--z2 {
+  box-sizing: border-box;
+  height: 40vh;
+  width: 250px;
+}
+
+.projectHeader {
+  padding-top: 0.5em;
+}
+
+#projectsHolder {
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+}
+
+.col-md-2 {
+  max-height: 40vh;
+}
+
+.rightProject {
+  max-height: 20vh !important;
+  transition: width 1s;
+}
+
+.rightProjectsSide {
+  vertical-align: top;
+  display: inline-block;
+}
+
+.rightProject:hover {
+  width: 500px !important;
+}
+
+.leftProjectSide {
+  vertical-align: top;
+  margin-right: 2em;
+  display: inline-block;
+  transition: width 1s;
+}
+
+.leftProjectSide:hover {
+  width: 500px !important;
 }
 
 img {
@@ -18,33 +70,16 @@ img {
   z-index: -1;
 }
 
-@@keyframes animation {
-  from {
-    margin-right: 0;
-  }
-
-  to {
-    margin-right: -50vw;
-  }
-}
-
 .mdc-elevation--z3 {
   height: 40vh;
-  max-width: 250px !important;
-}
-
-#githubLink {
-  margin-top: 10px;
+  width: 250px !important;
+  display: inline-block;
+  vertical-align: top;
+  margin: 5em;
 }
 
 #toolsSection {
-  margin-left: 42%;
-  top: 40vh;
-  height: 40vh;
-  max-height: 20vh;
-  margin-top: -20vh;
-  padding-right: 20vh;
-  width: 58%;
+  margin-right: 20vw;
   opacity: 0;
   position: absolute;
   transition: opacity 1s;
@@ -52,9 +87,11 @@ img {
 
 #aboutcontainer {
   background-color: rgb(66, 66, 66);
-  z-index: 2;
+  z-index: -1;
   width: 41.666667%;
+  min-width: 30em;
   transition: width 1s;
+  height: 100vh !important;
 }
 
 .row {
@@ -67,6 +104,10 @@ img {
   margin-top: -10em;
   padding-left: 10vw;
   position: absolute;
+}
+
+#githubLink {
+  margin-top: 10px;
 }
 
 #codeImage {

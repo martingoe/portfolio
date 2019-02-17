@@ -1,92 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="javascript.js"></script>
-  <title>Martin Goetze</title>
+    <script src="javascript.js"></script>
+    <title>Martin Goetze</title>
 </head>
 
 <body>
-
-
-  <main id="main">
+<main id="main">
     <section id="section1">
-      <div class="row">
-        <div id="aboutcontainer">
-          <div id="centered">
-            <h1>Martin Goetze</h1>
-            <h5>Full Stack software developer</h5>
-            <a href="https://github.com/xCubeArrow" target="_blank" id="githubLink" name="button" class="btn btn-light"><img src="images/mark-github.svg">
-              <img src="images/logo-github.svg" alt="GitHub"></a>
-          </div>
-          <div id="toolsSection" class="row">
-            <div class="mdc-elevation--z3 col-md-5">
-              <h3>
-                <br>
-                Front End
-              </h3>
-              <ul>
-                <li>HTML 5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
-                <li>JavaScript</li>
-                <li>JQuery</li>
-              </ul>
+        <div class="row">
+            <div id="aboutcontainer">
+                <div id="centered">
+                    <h1>Martin Goetze</h1>
+                    <h5>Full Stack software developer</h5>
+                    <a class="btn btn-light" href="https://github.com/xCubeArrow" id="githubLink" name="button"
+                       target="_blank"><img src="images/mark-github.svg" alt="">
+                        <img alt="GitHub" src="images/logo-github.svg"></a>
+                </div>
             </div>
-            <div class="col-md-2">
 
+            <div id="classToCenterToolsIn">
+                <div id="toolsSection">
+                    <div class="mdc-elevation--z3">
+                        <h3>
+                            <br>
+                            Front End
+                        </h3>
+                        <ul>
+                            <li>HTML 5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+
+                    <div class="mdc-elevation--z3">
+                        <h3>
+                            <br>
+                            Back End
+                            <br>
+                        </h3>
+                        <ul>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="mdc-elevation--z3 col-md-5">
-              <h3>
-                <br>
-                Back End
-                <br>
-              </h3>
-              <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>MySQL</li>
-              </ul>
-            </div>
-          </div>
         </div>
-
-
-      </div>
-
     </section>
 
 
     <section id="section2">
-      <h1>
-        Projekte
-      </h1>
-      <div class="mdc-elevation--z2">
-        <h3>
-          Simple HttpServer
-        </h3>
-      </div>
-      <div class="mdc-elevation--z2">
-        <h3>Supermarket Comparer</h3>
-      </div>
-      <div class="mdc-elevation--z2">
-        <h3>
-          MySQL Manager
-        </h3>
-      </div>
+        <h1>
+            Projects
+        </h1>
+        <div id="projectsHolder">
+
+            <div class="mdc-elevation--z2 leftProjectSide">
+                <h3 class="projectHeader">
+                    Simple HttpServer
+                </h3>
+            </div>
+
+            <div class="rightProjectsSide">
+                <div class="mdc-elevation--z2 rightProject">
+                    <h3 class="projectHeader">
+                        Supermarket Comparer
+                    </h3>
+                </div>
+                <div class="mdc-elevation--z2 rightProject">
+                    <h3 class="projectHeader">
+                        MySQL Manager
+                    </h3>
+
+                </div>
+            </div>
+        </div>
 
 
     </section>
-    <section>
-
-    </section>
-  </main>
+</main>
+<footer>
+    Contact me
+</footer>
 </body>
 
 </html>

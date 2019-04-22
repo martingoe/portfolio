@@ -10,19 +10,28 @@
   text-align: center;
   width: 100%;
   color: rgb(255, 255, 255);
-  padding-top: 20vh;
+  padding-top: 5vh;
 }
 
-#classToCenterToolsIn{
-  display:flex;
-  justify-content:flex-end;
-  align-items:center;
+#classToCenterToolsIn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .mdc-elevation--z2 {
   box-sizing: border-box;
   height: 40vh;
-  width: 250px;
+  width: 300px;
+  background-color: rgb(65, 65, 65);
+}
+
+.projectLanguageDiv {
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
 }
 
 .projectHeader {
@@ -41,8 +50,8 @@
 }
 
 .rightProject {
-  max-height: 20vh !important;
-  transition: width 1s;
+  max-height: 19vh !important;
+  position: relative;
 }
 
 .rightProjectsSide {
@@ -50,20 +59,15 @@
   display: inline-block;
 }
 
-.rightProject:hover {
-  width: 500px !important;
-}
 
 .leftProjectSide {
   vertical-align: top;
-  margin-right: 2em;
   display: inline-block;
-  transition: width 1s;
+  position: relative;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 
-.leftProjectSide:hover {
-  width: 500px !important;
-}
 
 img {
   max-height: 100vh;
@@ -81,9 +85,11 @@ img {
 #toolsSection {
   margin-right: 20vw;
   opacity: 0;
-  position: absolute;
+  position: relative;
+  margin-top: -50%;
   transition: opacity 1s;
 }
+
 
 #aboutcontainer {
   background-color: rgb(66, 66, 66);

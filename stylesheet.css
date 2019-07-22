@@ -25,6 +25,13 @@
   width: 300px;
   background-color: rgb(65, 65, 65);
 }
+a{
+  color: white !important;
+}
+a:hover{
+  color: gray !important;
+  text-decoration: none !important;
+}
 
 .projectLanguageDiv {
   text-align: right;

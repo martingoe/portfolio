@@ -1,141 +1,155 @@
 #section1 {
-  height: 100vh;
-  position: relative;
-  color: rgb(255, 255, 255)
+    height: 100vh;
+    position: relative;
 }
-
-#section2 {
-  background-color: rgb(66, 66, 66);
-  min-height: 100vh;
-  text-align: center;
-  width: 100%;
-  color: rgb(255, 255, 255);
-  padding-top: 5vh;
+#section2{
+    position: absolute;
+    top: 0;
+    left: 40vw;
+}
+#section3 {
+    background-color: rgb(66, 66, 66);
+    min-height: 100vh;
+    text-align: center;
+    width: 100%;
+    padding-top: 5vh;
+}
+#section4{
+    background-color: rgb(66,66,66);
+    text-align: center;
+    padding-bottom: 20vh;
 }
 
 #classToCenterToolsIn {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.mdc-elevation--z2 {
-  box-sizing: border-box;
-  height: 40vh;
-  width: 300px;
-  background-color: rgb(65, 65, 65);
+.project {
+    box-sizing: border-box;
+    height: 40vh;
+    width: 300px;
+    background-color: rgb(65, 65, 65);
+    margin: 0 2em 2em 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 a{
-  color: white !important;
+    color: lightgray !important;
+    text-decoration: none;
 }
-a:hover{
-  color: gray !important;
-  text-decoration: none !important;
+a:hover {
+    color: gray !important;
+    text-decoration: none !important;
 }
 
 .projectLanguageDiv {
-  text-align: right;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 1em;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
 }
 
 .projectHeader {
-  padding-top: 0.5em;
+    padding-top: 0.5em;
 }
 
 #projectsHolder {
-  margin-top: 2em;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
 }
 
-.col-md-2 {
-  max-height: 40vh;
-}
+
 
 .rightProject {
-  max-height: 19vh !important;
-  position: relative;
+    max-height: 18.75vh !important;
+    position: relative;
 }
 
 .rightProjectsSide {
-  vertical-align: top;
-  display: inline-block;
+    vertical-align: top;
+    display: inline-block;
+
 }
 
-
+.mdc-elevation--z3 {
+    background-color: rgb(66,66,66);
+     height: 40vh;
+     width: 250px !important;
+     display: inline-block;
+     vertical-align: top;
+     margin: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+ }
 .leftProjectSide {
-  vertical-align: top;
-  display: inline-block;
-  position: relative;
-  margin-right: 2em;
-  margin-left: 2em;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
 }
 
 
 img {
-  max-height: 100vh;
-  z-index: -1;
+    max-height: 100vh;
+    z-index: -1;
 }
+@media only screen and (max-width:620px) {
 
-.mdc-elevation--z3 {
-  height: 40vh;
-  width: 250px !important;
-  display: inline-block;
-  vertical-align: top;
-  margin: 5em;
+    #section2 {
+        top: 80vh;
+        left: auto;
+
+        height: 100vh;
+        background-color: rgb(66,66,66);
+    }
+    #section3{
+        margin-top: 80vh;
+    }
 }
 
 #toolsSection {
-  margin-right: 20vw;
-  opacity: 0;
-  position: relative;
-  margin-top: -50%;
-  transition: opacity 1s;
+    top: 30vh;
+    left: 50vw;
+    padding: 10vw;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 
 #aboutcontainer {
-  background-color: rgb(66, 66, 66);
-  z-index: -1;
-  width: 41.666667%;
-  min-width: 30em;
-  transition: width 1s;
-  height: 100vh !important;
+    background-color: rgb(66, 66, 66);
+    z-index: -1;
+    width: 41.666667%;
+    min-width: 620px;
+    transition: width 1s;
+    height: 100vh !important;
+    padding-left: 5em;
 }
 
-.row {
-  min-height: 100vh;
-}
 
 #centered {
-  top: 50vh;
-  height: 20em;
-  margin-top: -10em;
-  padding-left: 10vw;
-  position: absolute;
+    top: 40vh;
+    position: absolute;
 }
 
 #githubLink {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
-#codeImage {
-  min-width: 100%;
-  margin-left: -1em;
-}
 
 body {
-  background-image: url("images/code.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("images/code.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white !important;
 }
 
 html {
-  height: 100%;
-  overflow-x: hidden;
-  margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
 }

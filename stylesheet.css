@@ -1,155 +1,176 @@
-#section1 {
-    height: 100vh;
-    position: relative;
-}
-#section2{
-    position: absolute;
-    top: 0;
-    left: 40vw;
-}
-#section3 {
-    background-color: rgb(66, 66, 66);
-    min-height: 100vh;
-    text-align: center;
-    width: 100%;
-    padding-top: 5vh;
-}
-#section4{
-    background-color: rgb(66,66,66);
-    text-align: center;
-    padding-bottom: 20vh;
+@font-face {
+    font-family: monserrat;
+    src: url("monserrat.ttf");
 }
 
-#classToCenterToolsIn {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2.25em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: monserrat, monospace !important;
+    padding: 5px;
+}
+
+#section1 >div > h1, h5 {
+    padding-left: 20px !important;
+}
+
+
+section {
+    min-height: 75vh;
+    width: 100%;
+}
+
+#section1 {
+    height: 100vh;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
-.project {
-    box-sizing: border-box;
-    height: 40vh;
-    width: 300px;
-    background-color: rgb(65, 65, 65);
-    margin: 0 2em 2em 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+#section2 > div {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
 }
 
-a{
-    color: lightgray !important;
-    text-decoration: none;
-}
-a:hover {
-    color: gray !important;
-    text-decoration: none !important;
+#section2 > div > div {
+    margin: 30px;
+    min-width: 350px;
+    flex: 0 0 calc(16.66% - 20px);
+    height: 400px;
+    position: relative;
+    box-shadow: 3px 3px 5px #282828;
 }
 
 .projectLanguageDiv {
     text-align: right;
     position: absolute;
-    bottom: 0;
-    width: 100%;
     padding: 1em;
+    right: 0;
+    bottom: 5px;
 }
 
-.projectHeader {
-    padding-top: 0.5em;
+#section3 {
+    text-align: center;
+    margin-top: 20vh;
 }
 
-#projectsHolder {
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.25s ease-in-out;
 }
 
-
-
-.rightProject {
-    max-height: 18.75vh !important;
-    position: relative;
-}
-
-.rightProjectsSide {
-    vertical-align: top;
-    display: inline-block;
+a:hover {
+    color: gray;
 
 }
 
-.mdc-elevation--z3 {
-    background-color: rgb(66,66,66);
-     height: 40vh;
-     width: 250px !important;
-     display: inline-block;
-     vertical-align: top;
-     margin: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
- }
-.leftProjectSide {
-    vertical-align: top;
-    display: inline-block;
-    position: relative;
+a.button {
+    background-color: lightgrey;
+    color: black;
+    margin-left: 20px;
+
+    padding: 12px;
+    border-radius: 6px;
+    transition: background-color 0.5s ease;
+}
+
+a.button:hover {
+    background-color: #c1bfc0;
 }
 
 
 img {
-    max-height: 100vh;
-    z-index: -1;
-}
-@media only screen and (max-width:620px) {
-
-    #section2 {
-        top: 80vh;
-        left: auto;
-
-        height: 100vh;
-        background-color: rgb(66,66,66);
-    }
-    #section3{
-        margin-top: 80vh;
-    }
+    margin: 0;
+    padding: 0;
 }
 
-#toolsSection {
-    top: 30vh;
-    left: 50vw;
-    padding: 10vw;
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-
-#aboutcontainer {
-    background-color: rgb(66, 66, 66);
-    z-index: -1;
-    width: 41.666667%;
-    min-width: 620px;
-    transition: width 1s;
-    height: 100vh !important;
-    padding-left: 5em;
-}
-
-
-#centered {
-    top: 40vh;
+#backgroundImage {
     position: absolute;
-}
-
-#githubLink {
-    margin-top: 10px;
-}
-
-
-body {
-    background-image: url("images/code.png");
+    top: 0;
+    left: 40%;
+    height: 100%;
+    width: 60%;
+    overflow: hidden;
+    background-image: url("images/code.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
-    color: white !important;
 }
 
-html {
+
+#popout {
+    position: absolute;
+    left: 40%;
+    top: 0;
     height: 100%;
-    overflow-x: hidden;
-    margin: 0;
+    width: 0;
+    transition: width 1s ease-in-out;
+    background-color: rgb(66, 66, 66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#popout > div {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin: 50px;
+    box-shadow: 3px 3px 5px #282828;
+    width: 300px;
+    min-width: 200px;
+    height: 300px;
+}
+
+
+
+
+@media only screen and (max-width: 800px) {
+
+    #backgroundImage {
+        opacity: 0;
+    }
+
+    #popout {
+        top: 80vh;
+        left: 0;
+        display: block;
+        min-width: 100%;
+    }
+
+    #popout > div {
+        width: 80%;
+    }
+
+    #section2 {
+        margin-top: 100vh;
+    }
 }

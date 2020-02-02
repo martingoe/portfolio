@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5 {
     padding: 5px;
 }
 
-#section1 >div > h1, h5 {
+#section1 > div > h1, h5 {
     padding-left: 20px !important;
 }
 
@@ -121,7 +121,7 @@ img {
     height: 100%;
     width: 60%;
     overflow: hidden;
-    background-image: url("images/code.jpg");
+    background-image: url("images/code.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -151,9 +151,83 @@ img {
 }
 
 
+/* Portrait */
+@media only screen and (max-width: 800px),
+    /* ----------- iPhone 4 and 4S ----------- */
+only screen and
+ (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2),
+    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+only screen and
+(min-device-width: 320px)
+and (max-device-width: 568px)
+and (-webkit-min-device-pixel-ratio: 2),
+    /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+only screen and
+(min-device-width: 375px)
+and (max-device-width: 667px)
+and (-webkit-min-device-pixel-ratio: 2),
+    /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+only screen and
+(min-device-width: 414px)
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 3),
+    /* ----------- iPhone X ----------- */
+only screen and
+(min-device-width: 375px)
+and (max-device-width: 812px)
+and (-webkit-min-device-pixel-ratio: 3),
+    /* ----------- Galaxy S3 ----------- */
+only screen and
+(device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 2),
+    /* ----------- Galaxy S4, S5 and Note 3 ----------- */
+only screen and
+(device-width: 320px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3),
+    /* ----------- Galaxy S6 ----------- */
+only screen and
+(device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 4),
+    /* ----------- Google Pixel ----------- */
+only screen and
+(device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3),
+    /* ----------- Google Pixel XL ----------- */
+only screen and
+(device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 4),
+    /* ----------- HTC One ----------- */
+only screen and
+(device-width: 360px)
+and (device-height: 640px)
+and (-webkit-device-pixel-ratio: 3),
+    /* ----------- Windows Phone ----------- */
+only screen and
+(device-width: 480px)
+and (device-height: 800px) {
 
+    h1 {
+        font-size: 3.5em;
+    }
 
-@media only screen and (max-width: 800px) {
+    h3 {
+        font-size: 2.25em;
+    }
+
+    h5 {
+        font-size: 1.75em;
+    }
+
+    p, li {
+        font-size: 1.75rem;
+    }
 
     #backgroundImage {
         opacity: 0;
@@ -173,4 +247,5 @@ img {
     #section2 {
         margin-top: 100vh;
     }
+
 }
